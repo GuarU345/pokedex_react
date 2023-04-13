@@ -1,15 +1,18 @@
-import { useState } from 'react'
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import './App.css'
 import Pokemons from './components/Pokemons'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PokemonDetails from './components/PokemonDetails';
 
 function App() {
   
   return (
-    <div className="App">
-      <h1 style={{textAlign:'center',color:'white'}}>POKEDEX</h1>
-      <Pokemons/>
-    </div>
+   <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Pokemons></Pokemons>}></Route>
+      <Route path='/pokemondetails' element={<PokemonDetails></PokemonDetails>}></Route>
+    </Routes>
+   </BrowserRouter>
   )
 }
 
