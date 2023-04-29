@@ -92,6 +92,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    color: white;
 }
 
 .pokemon-card-details{
@@ -113,7 +114,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    border-radius: 1rem;
+}
+
+.pkd-attack-list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0rem;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    list-style: none;
+}
+
+.pkd-attack,.pkd-type{
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    padding: 0rem 0.3rem;
 }
 
